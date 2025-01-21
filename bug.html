@@ -1,0 +1,11 @@
+```javascript
+<div class="flex">
+  <div class="bg-red-500 p-4">
+    This is a red div.
+  </div>
+  <div class="bg-blue-500 p-4">
+    This is a blue div.
+  </div>
+</div>
+```
+This code produces unexpected behavior when using Tailwind's `flex` utility. The red div is rendered correctly, but the blue div is rendered *below* the red div, not beside it as expected. This is due to a common misunderstanding in how Tailwind's `flex` utility works, especially within nested structures.
